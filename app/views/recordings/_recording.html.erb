@@ -1,6 +1,6 @@
 <strong><%= recording.id %></strong>
 
 <div class="well">
-  <%= recording.temp %> | <%= recording.status %>
-  <span class="pull-right"><%= time_ago_in_words(comment.created_at) %> Ago</span>
+  <b>Temperature: </b> <%= recording.temp%> degrees. <b>Status: </b><%= recording.status %>
+  <span class="pull-right"><%= time_ago_in_words(recording.created_at) %> Ago</span>
 </div>
