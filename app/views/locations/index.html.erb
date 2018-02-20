@@ -1,5 +1,8 @@
-
-<% @locations.each do |location| %>
-    <h2><%= link_to location.name, location %></h2>
-    <p><%= location.created_at.strftime("%B, %d, %Y") %></p>
-<% end %>
+<div class="row">
+	<div class="col-md-7 col-md-offset-2">
+		<% @locations.each do |location| %>
+		    <h2><%= link_to location.name, location %></h2>
+		    <p><%= location.created_at.strftime("%B, %d, %Y") %></p>
+		<% end %>
+	</div>
+</div>

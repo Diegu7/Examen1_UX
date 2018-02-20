@@ -2,7 +2,7 @@
 	<div class="col-md-7 col-md-offset-2">
 		<h1><%= @location.name %></h1>
 		<p>
-		    Submitted <%= time_ago_in_words(@location.created_at) %> Ago
+		    Location registered <%= time_ago_in_words(@location.created_at) %> Ago
 
 		    <% if(user_signed_in? && current_user.id == @location.user_id) %>
 			  | <%= link_to "Edit", edit_location_path(@location) %> 

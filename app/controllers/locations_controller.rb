@@ -22,7 +22,7 @@ class LocationsController < ApplicationController
 	end
 
 	def destroy
-	    @plocation.destroy
+	    @location.destroy
 	    redirect_to locations_path
 	end
 

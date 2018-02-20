@@ -1,6 +1,4 @@
-<strong><%= recording.id %></strong>
-
 <div class="well">
   <b>Temperature: </b> <%= recording.temp%> degrees. <b>Status: </b><%= recording.status %>
-  <span class="pull-right"><%= time_ago_in_words(recording.created_at) %> Ago</span>
+  <span class="pull-right"> <b>Recorded:</b> <%= recording.created_at.strftime("%H:%M:%S, %d/%m/%y") %></span>
 </div>
