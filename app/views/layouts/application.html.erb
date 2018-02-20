@@ -9,8 +9,14 @@
   </head>
 
   <body>
-  	<p class="notice"><%= notice %></p>
+    <%= render 'partials/navbar' %>
+    <div>
+      <%= render 'partials/messages' %>
+      <%= yield %>  
+    </div>
+    
+    
+    <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
   </body>
 </html>
